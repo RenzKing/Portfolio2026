@@ -1,5 +1,10 @@
-body{margin:0; padding:0; background-color: #0b0b0c; font-family: "Archivo", system-ui, sans-serif;}
+html{box-sizing: border-box;}
+*, *::before, *::after {
+    box-sizing: inherit;}
+body{margin: 0 auto; padding:0; background-color: #0b0b0c; font-family: "Archivo", system-ui, sans-serif; }
 
+h1{font-size:40px; color:#a3d65e}
+p{color: #999; font-size:16px; line-height:1.65;}
 /* Header */
 header{max-width:100%;}
 
@@ -12,4 +17,7 @@ nav ul{display:flex; list-style: none; justify-content:center;gap: 30px;}
 nav li {color: #999; font-size: 22px; }
 
 /* Hero */
-.hero-container{max-width: 1200px;}
+.hero-container{max-width:1200px; margin: 0 auto; padding: calc(4 * 28px) 0 calc(3 * 28px); align-items:center;}
+.hero{display: grid; grid-template-columns: 3fr 2fr; }
+.hero-text{ line-height:1.2; font-size: clamp(44px,6.4vw,88px);}
+.hero-image{padding:30px 20px}
