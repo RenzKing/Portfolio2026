@@ -17,9 +17,5 @@ nav ul{display:flex; list-style: none; justify-content:center;gap: 30px;}
 nav li {color: #999; font-size: 22px; }
 
 /* Hero */
-.hero-container{max-width:1200px; margin: 0 auto; padding: calc(4 * 28px) 0 calc(3 * 28px); align-items:center;}
-.hero{display: grid; grid-template-columns: 3fr 2fr; }
-.hero-text{ line-height:1.2; font-size: clamp(44px,6.4vw,88px);}
-.hero-image{padding:30px 20px}
-.hero-action{display: flex; flex:wrap; gap:14px; margin-top:34px;}
-.btn{padding: 12px 22px; background-color: #fff; font-size:16px; }
+
+
