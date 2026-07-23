@@ -9,7 +9,7 @@ p{color: #999; font-size:16px; line-height:1.50; margin:10px 0;}
 /* Header */
 header{max-width:100%;}
 /* Navigation */
-nav {max-width: 1200px; margin: 0 auto; border-bottom: 1px solid #999; display:flex;}
+nav {max-width: 1200px; margin: 0 auto; border-bottom: 1px solid #999; display:flex; padding: 0 40px;}
 .nav-links li a {color: #999; text-decoration: none;}
 .logo{margin: auto;
     margin-left: 0;}
@@ -22,8 +22,9 @@ nav li {color: #999; font-size: 22px; }
 .hero-text{width:100%;}
 .hero-img{width:100%;}
 .hero-btn{margin:30px 0; gap:20px;}
-.btn{padding:7px; margin: 0 5px; background-color: #fff; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif;}
-.btn--secondary{padding:7px; margin: 0 5px; background-color: #999; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif;}
+.btn{padding:7px; margin: 0 5px; background-color: #fff; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif; transition: background-color 0.9s ease, color 0.9s ease;}
+.btn--secondary{padding:7px; margin: 0 5px; background-color: yellow; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif; transition: background-color 0.9s ease, color 0.9s ease;
+}
 .btn:hover{background-color: #999; transition: 0.9s; }
 .btn--secondary:hover{ background-color: #fff; transition: 0.9s; }
 
