@@ -3,28 +3,36 @@ html{box-sizing: border-box;}
     box-sizing: inherit;}
 body{margin: 0 auto; padding:0; background-color: #0b0b0c; font-family: "Archivo", system-ui, sans-serif; }
 
+/* Global */
 h1{font-size:clamp(2.75rem, 6vw, 4.5rem); color:#fff}
-h2{font-size:clamp(1.75rem, 3.5vw, 2.5rem); color:#fff;}
+h2{font-size:clamp(1.75rem, 3.5vw, 2.5rem); color:#a3d65e;;}
 a{text-decoration: none;}
 p{color: #999; font-size:1.1rem; line-height:1.7; max-width:65ch;}
 img{max-width:100%; height: auto; display:block;}
+.container{padding: 80px 60px; margin: auto;background:#0b0b0c; max-width:1200px; border-bottom: 1px solid #26262a;}
+
+
 /* Header */
 header{max-width:100%;}
+
+
 /* Navigation */
 nav {max-width: 1200px; margin: 0 auto; border-bottom: 1px solid #26262a; display:flex; padding: 0 40px;}
 .nav-links li a {color: #999; text-decoration: none;}
-.logo{margin: auto;
-    margin-left: 0;}
+.logo{margin: auto; margin-left: 0;}
 nav ul{display:flex; list-style: none; justify-content:center;gap: 30px;}
 nav li {color: #999; font-size: 22px; }
 
-.container{padding: 80px 60px; margin: auto;background:#0b0b0c; max-width:1200px;}
 .eyebrow{font-size: 1rem; font-weight:700; letter-spacing: 0.2em; text-transform: uppercase; margin: 0 0 1.5rem; color:#a3d65e;}
+
+
 /* Hero */
 .hero-wrap {display: flex; flex-direction: row; gap: 30px;}
 .hero-text{flex: 1;}
 .hero-img{flex: 1;}
 .hero-btn{margin:30px 0; gap:20px;}
+
+/* Buttons */
 .btn{padding:7px; margin: 0 5px; background-color: #fff; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif; transition: background-color 0.9s ease, color 0.9s ease; color:#000;border: 1px solid #fff; }
 .btn--secondary{padding:7px; margin: 0 5px; background-color: #000; color:#fff; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif; transition: background-color 0.9s ease, color 0.9s ease; border:1px solid #fff; 
 }
@@ -33,3 +41,10 @@ nav li {color: #999; font-size: 22px; }
 
 
 
+/* About */
+
+.about-wrap{display: flex; flex-direction: row; gap: 30px;}
+.about-text{flex:1;}
+.about-stack{flex:1;}
+.stacks{display:flex; flex-direction: row; gap:20px;}
+.stacks-list{padding: 0 7px; border:1px solid #fff;}
