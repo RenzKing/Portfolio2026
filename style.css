@@ -43,8 +43,9 @@ nav li {color: #999; font-size: 22px; }
 
 /* About */
 
-.about-wrap{display: flex; flex-direction: row; gap: 30px;}
+.about-wrap{display: flex; gap: 30px;}
 .about-text{flex:1;}
 .about-stack{flex:1;}
-.stacks{display:flex; flex-direction: row; gap:20px;}
-.stacks-list{padding: 0 7px; border:1px solid #fff;}
+.stacks{display:flex; flex-wrap: wrap; gap:10px; padding:0; margin:0; list-style: none;}
+.stacks-list{padding: 8px 14px;  background-color:rgb(19, 19, 21); border: 1px solid #26262a; border-radius:6px; color: #d4d4d8;
+}
