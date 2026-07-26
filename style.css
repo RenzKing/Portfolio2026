@@ -10,6 +10,7 @@ a{text-decoration: none;}
 p{color: #999; font-size:1.1rem; line-height:1.7; max-width:65ch;}
 img{max-width:100%; height: auto; display:block;}
 .container{padding: 80px 60px; margin: auto;background:#0b0b0c; max-width:1200px; border-bottom: 1px solid #26262a;}
+.wrap{display: flex; flex-direction: row; gap: 30px;}
 
 
 /* Header */
@@ -49,3 +50,15 @@ nav li {color: #999; font-size: 22px; }
 .stacks{display:flex; flex-wrap: wrap; gap:10px; padding:0; margin:0; list-style: none;}
 .stacks-list{padding: 8px 14px;  background-color:rgb(19, 19, 21); border: 1px solid #26262a; border-radius:6px; color: #d4d4d8;
 }
+
+/* Works */
+.works-wrap{display: flex; gap:30px;}
+.works-grid{display:grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+.cards{width: 100%;background-color:rgb(19, 19, 21); border: 1px solid #26262a;}
+.works-card{ max-width:600px; height:300 px; }
+.works-card img{object-fit:cover; width:100%; aspect-ratio: 16 / 10; display:block;}
+.works-info{display:flex; gap:20px; justify-content: space-between; align-items: baseline;}
+.works-title{padding:0 10px; font-size:24px; color:#fff;}
+.works-year{padding:0 10px; font-size:24px;color:#fff; }
+.works-text p{padding:0 10px; margin-top:0;}
+.works-footer p{padding: 0 10px; color:#a3d65e;}
