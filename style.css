@@ -34,7 +34,7 @@ nav li {color: #999; font-size: 22px; }
 .hero-btn{margin:30px 0; gap:20px;}
 
 /* Buttons */
-.btn{padding:7px; margin: 0 5px; background-color: #fff; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif; transition: background-color 0.9s ease, color 0.9s ease; color:#000;border: 1px solid #fff; }
+.btn{padding:7px; margin: 0 5px; background-color: #fff; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif; transition: background-color 0.9s ease, color 0.9s ease; color:#000;border: 1px solid #fff; cursor: pointer; }
 .btn--secondary{padding:7px; margin: 0 5px; background-color: #000; color:#fff; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif; transition: background-color 0.9s ease, color 0.9s ease; border:1px solid #fff; 
 }
 .btn:hover{background-color: #a3d65e; color:#fff; transition: 0.9s; }
@@ -68,3 +68,21 @@ nav li {color: #999; font-size: 22px; }
 .exp-row{max-width: 1200px; border-bottom: 1px solid #26262a; padding: 10px 0;}
 .exp-row:first-of-type {border-top: 1px solid #26262a;}
 .exp-date p{color: #a3d65e;}
+
+
+/* Contact */
+form{display:grid; gap:20px;}
+form > .btn{justify-self: start;}
+.contact-grid{display:grid; grid-template-columns: 1fr 1fr; gap:50px;}
+.contact-title p{font-size:clamp(1.5rem, 3vw, 3rem); color:#fff; line-height: 1.3; margin-top: 0px;}
+.contact-form{display:grid; grid-template-columns: 1fr 1fr; gap:20px;}
+
+.form-row{display:grid; }
+.input{width:100%; }
+label {color:#a3d65e; margin-bottom: 15px;}
+input {background-color:rgb(19, 19, 21); padding:15px; border: 1px solid #26262a;}
+input, textarea{ font-size: 1.1rem; font-family: inherit;}
+input::placeholder, textarea::placeholder{color:#a3d65e;}
+button.btn{font-size: 1.2rem;}
+
+
