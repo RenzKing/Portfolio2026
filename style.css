@@ -62,3 +62,9 @@ nav li {color: #999; font-size: 22px; }
 .works-year{padding:0 10px; font-size:24px;color:#fff; }
 .works-text p{padding:0 10px; margin-top:0;}
 .works-footer p{padding: 0 10px; color:#a3d65e;}
+
+/* Experience */
+.exp-wrap{display:grid; grid-template-columns:minmax(120px, 180px) minmax(0px, 1fr); align-items: baseline; gap: 30px}
+.exp-row{max-width: 1200px; border-bottom: 1px solid #26262a; padding: 10px 0;}
+.exp-row:first-of-type {border-top: 1px solid #26262a;}
+.exp-date p{color: #a3d65e;}
