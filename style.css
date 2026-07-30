@@ -85,4 +85,10 @@ input, textarea{ font-size: 1.1rem; font-family: inherit;}
 input::placeholder, textarea::placeholder{color:#a3d65e;}
 button.btn{font-size: 1.2rem;}
 
+/* Footer */
+footer {max-width: 1200px; margin: 0 auto; border-bottom: 1px solid #26262a; display:flex; padding: 10px 40px 20px;}
+.footer-links li a {color: #999; text-decoration: none;}
+.footer-title{margin: auto; margin-left: 0; color:#a3d65e;}
+footer ul{display:flex; list-style: none; justify-content:center;gap: 30px;}
+footer li {color: #999; font-size: 22px; }
 
