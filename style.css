@@ -21,10 +21,33 @@ header{max-width:100%;}
 
 
 /* Navigation */
-nav {max-width: 1200px; margin: 0 auto; border-bottom: 1px solid #26262a; display:flex; padding: 0 40px; flex-wrap:wrap; align-items:center;}
-.nav-links li a {color: #999; text-decoration: none;}
-.logo{margin: auto; margin-left: 0;}
-nav ul{display:flex; list-style: none; justify-content:center;gap: 30px;}
+nav {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    border-bottom: 1px solid #26262a; 
+    display:flex; 
+    padding: 0 40px; 
+    flex-wrap:wrap; 
+    align-items:center; 
+    position: relative;
+}
+
+.nav-links li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.logo{
+    margin: auto; 
+    margin-left: 0;
+}
+
+nav ul{
+    display:flex; 
+    list-style: none; 
+    justify-content:center;
+    gap: 30px;}
+
 nav li {color: #999; font-size: 22px; }
 
 .nav-toggle{
@@ -38,32 +61,72 @@ nav li {color: #999; font-size: 22px; }
     border:none;
     padding:0;
     cursor:pointer;
+  
 }
 
 .nav-toggle .bar{
     display: block;
     width:24px;
     height:2px;
-    background: #f5f5f5;
+    background: #a3d65e;;
     transition: transform 0.25s ease, opacity 0.25s ease;
+    
 }
 
-.nav-toggle[aria-expanded="true"] .bar:nth-child(1){transform: translateY(7px) rotate (45deg);}
-.nav-toggle[aria-expanded="true"] .bar:nth-child(2){opacity:0;}
-.nav-toggle[aria-expanded="true"] .bar:nth-child(3){transform: translateY(7px) rotate (45deg);}
+.nav-toggle[aria-expanded="true"] .bar:nth-child(1){transform: translateY(7px) rotate(45deg); background:red;}
+.nav-toggle[aria-expanded="true"] .bar:nth-child(2){transform: translateY(7px) rotate(45deg); background:red;}
+.nav-toggle[aria-expanded="true"] .bar:nth-child(3){transform: translateY(7px) rotate(45deg); background:red;}
 
-@media(max-width:750px){
+.nav-close{display:none;}
+
+@media(max-width:763px){
     .nav-toggle{display: flex;}
-    .nav-links {display: none; width:100%;}
+
+    .nav-links {
+        display: none; 
+        position:fixed; 
+        background: #0b0b0c; 
+        z-index: 200; 
+        padding: 80px 32px 32px; 
+        overflow-y:auto;
+        inset:auto;
+    }
+
+
     .nav-links.is-open{display: block;}
+
     nav ul{
         flex-direction: column;
         align-items: flex-start;
-        gap:16px;
-        padding:20px 0;
+        gap:0;
+        padding:0;
         margin: 0;
     }
+
+    nav li a {
+        display:block;
+        padding: 16px 0;
+        font-size:1.25rem;
+        border-bottom: 1px solid #1a1a1e;
+    }
+
+    .nav-close{
+        display:block;
+        position:absolute;
+        top:24px;
+        right:24px;
+        width:44px;
+        height:44px;
+        background: none;
+        border:1px solid #3f3f46;
+        border-radius: 50%; 
+        color: #f5f5f5;
+        font-size: 1.25rem;
+        cursor:pointer;
+    }
 }
+
+
 
 
 /* Hero */
