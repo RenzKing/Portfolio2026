@@ -34,3 +34,6 @@ document.addEventListener('keydown', (e) => {
 document.querySelectorAll('*').forEach(el => {
     if (el.offsetWidth > document.documentElement.clientWidth) console.log(el.offsetWidth, el);
   });
+
+  const c = document.querySelector('.container');
+  console.log(getComputedStyle(c).width, getComputedStyle(c).maxWidth, getComputedStyle(c).boxSizing);
