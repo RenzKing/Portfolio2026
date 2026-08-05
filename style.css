@@ -35,16 +35,20 @@ nav {
     position: relative;
 }
 
+.nav-links li{
+padding:0;
+}
+
 .nav-links li a {
-    color: #999;
+   display:block;
+   padding:16px 12px;
+   margin:0 -12px;
+    color: #e5e5e5;
     text-decoration: none;
-    border-bottom:1px solid #1f1f23;
     transition: color 0.2s ease;
 }
 
-.nav-links li a:hover{
-    color:#a3d65e;
-}
+
 
 .logo{
     margin: auto; 
@@ -55,7 +59,11 @@ nav ul{
     display:flex; 
     list-style: none; 
     justify-content:center;
-    gap: 30px;}
+    gap: 30px;
+   
+}
+
+
 
 nav li {color: #999; font-size: 22px; }
 
@@ -91,7 +99,7 @@ nav li {color: #999; font-size: 22px; }
     .nav-links {
         display: none; 
         position:fixed; 
-        background: #a3d65e;
+        background: rgb(19, 19, 21);
         top:0;
         right:0;
         bottom:0; 
@@ -101,9 +109,15 @@ nav li {color: #999; font-size: 22px; }
         width:50%;
         max-width:320px;
         min-width:260px;
-        /* height: 100%;
-        left: 30%; */
+      
     }
+
+    .nav-links li a:hover{
+        cursor:pointer;
+        color:#a3d65e;
+    }
+
+    .nav-links li a:active{color: #a3d65e; }
 
 
     .nav-links.is-open{display: block;}
@@ -236,5 +250,5 @@ footer li {color: #999; font-size: 22px; }
     .contact-form { grid-template-columns: 1fr; }
     .works-grid { grid-template-columns: 1fr; }
     .exp-wrap { grid-template-columns: 1fr; gap: 8px; }
-    .container { padding: 60px 24px; }
+    .container { padding: 80px 60px; }
 }
