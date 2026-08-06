@@ -22,9 +22,9 @@ img{max-width:100%; height: auto; display:block;}
     background-clip:text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    animation: sheen 14s ease-in-out infinite;
+    animation: fx 14s ease-in-out infinite;
 }
-@keyframes sheen {
+@keyframes fx {
     0%   { background-position: 0% 50%; }
     17%  { background-position: 95% 50%; }
     31%  { background-position: 40% 50%; }
