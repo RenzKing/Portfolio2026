@@ -1,3 +1,11 @@
+:root{
+    --bg: #0b0b0c;
+    --surface: rgb(19,19,21);
+    --text: #f5f5f5;
+    --text-muted: #999;
+    --border: #26262a;
+    --accent:#a3d65e;
+}
 html{box-sizing: border-box; scroll-behavior: smooth;}
 *, *::before, *::after {
     box-sizing: inherit;}
@@ -5,13 +13,13 @@ body{margin: 0 auto; padding:0; background-color: #0b0b0c; font-family: "Archivo
 
 /* Global */
 h1{font-size:clamp(2.75rem, 6vw, 4.5rem); color:#fff}
-h2{font-size:clamp(1.75rem, 3.5vw, 2.5rem); color:#a3d65e;;}
+h2{font-size:clamp(1.75rem, 3.5vw, 2.5rem); color: var(--accent);}
 a{text-decoration: none;}
 p{color: #999; font-size:1.1rem; line-height:1.7; max-width:65ch;}
 img{max-width:100%; height: auto; display:block;}
 .container{padding: 80px 60px; margin: auto;background:#0b0b0c; width:100%; max-width:1200px;border-bottom: 1px solid #26262a;}
 .wrap{display: flex; flex-direction: row; gap: 30px;}
-.eyebrow{font-size: 1rem; font-weight:700; letter-spacing: 0.2em; text-transform: uppercase; margin: 0 0 1.5rem; color:#a3d65e;}
+.eyebrow{font-size: 1rem; font-weight:700; letter-spacing: 0.2em; text-transform: uppercase; margin: 0 0 1.5rem; color:var(--accent);}
 
 .overlay::before {content: ''; position:fixed; inset:0; z-index:100; background-color:rgba(11, 11, 12, 0.7); backdrop-filter: blur(2px);
 }
@@ -104,7 +112,7 @@ nav li {color: #999; font-size: 22px; }
     display: block;
     width:24px;
     height:2px;
-    background: #a3d65e;
+    background: var(--accent);
     transition: transform 0.25s ease, opacity 0.25s ease;
     
 }
@@ -133,10 +141,10 @@ nav li {color: #999; font-size: 22px; }
 
     .nav-links li a:hover{
         cursor:pointer;
-        color:#a3d65e;
+        color:var(--accent);
     }
 
-    .nav-links li a:active{color: #a3d65e; }
+    .nav-links li a:active{color: var(--accent); }
 
 
     .nav-links.is-open{display: block;}
@@ -205,8 +213,8 @@ nav li {color: #999; font-size: 22px; }
 .btn{padding:7px; margin: 0 5px; background-color: #fff; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif; transition: background-color 0.9s ease, color 0.9s ease; color:#000;border: 1px solid #fff; cursor: pointer; }
 .btn--secondary{padding:7px; margin: 0 5px; background-color: #000; color:#fff; border-radius: 7px; font-family: "Archivo", system-ui, sans-serif; transition: background-color 0.9s ease, color 0.9s ease; border:1px solid #fff; 
 }
-.btn:hover{background-color: #a3d65e; color:#fff; transition: 0.9s; }
-.btn--secondary:hover{ background-color: #a3d65e; color:#000; transition: 0.9s; }
+.btn:hover{background-color: var(--accent); color:#fff; transition: 0.9s; }
+.btn--secondary:hover{ background-color: var(--accent); color:#000; transition: 0.9s; }
 
 
 
@@ -229,13 +237,13 @@ nav li {color: #999; font-size: 22px; }
 .works-title{padding:0 10px; font-size:24px; color:#fff;}
 .works-year{padding:0 10px; font-size:24px;color:#fff; }
 .works-text p{padding:0 10px; margin-top:0;}
-.works-footer p{padding: 0 10px; color:#a3d65e;}
+.works-footer p{padding: 0 10px; color:var(--accent);}
 
 /* Experience */
 .exp-wrap{display:grid; grid-template-columns:minmax(120px, 180px) minmax(0px, 1fr); align-items: baseline; gap: 30px}
 .exp-row{max-width: 1200px; border-bottom: 1px solid #26262a; padding: 10px 0;}
 .exp-row:first-of-type {border-top: 1px solid #26262a;}
-.exp-date p{color: #a3d65e;}
+.exp-date p{color: var(--accent);}
 
 
 /* Contact */
@@ -247,10 +255,10 @@ form > .btn{justify-self: start;}
 
 .form-row{display:grid; }
 
-label {color:#a3d65e; margin-bottom: 15px;}
+label {color:var(--accent); margin-bottom: 15px;}
 input {background-color:rgb(19, 19, 21); padding:15px; border: 1px solid #26262a;}
 input, textarea{ font-size: 1.1rem; font-family: inherit;}
-input::placeholder, textarea::placeholder{color:#a3d65e;}
+input::placeholder, textarea::placeholder{color:var(--accent);}
 button.btn{font-size: 1.2rem;}
 
 textarea{
@@ -265,7 +273,7 @@ line-height:1.6;
 /* Footer */
 footer {max-width: 1200px; margin: 0 auto; border-bottom: 1px solid #26262a; display:flex; padding: 10px 40px 20px;}
 .footer-links li a {color: #999; text-decoration: none;}
-.footer-title{margin: auto; margin-left: 0; color:#a3d65e;}
+.footer-title{margin: auto; margin-left: 0; color:var(--accent);}
 footer ul{display:flex; list-style: none; justify-content:center;gap: 30px;}
 footer li {color: #999; font-size: 22px; }
 
