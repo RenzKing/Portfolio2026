@@ -35,5 +35,16 @@ document.querySelectorAll('*').forEach(el => {
     if (el.offsetWidth > document.documentElement.clientWidth) console.log(el.offsetWidth, el);
   });
 
-  const c = document.querySelector('.container');
-  console.log(getComputedStyle(c).width, getComputedStyle(c).maxWidth, getComputedStyle(c).boxSizing);
+ const switchBtn = document.querySelector('.switch-icon');
+
+
+ if(localStorage.getItem('theme') === 'light'){
+    document.body.classList.add('light');
+ }
+
+ switchBtn.addEventListener('click', ()=>{
+   const isLight = document.body.classList.toggle('light');
+   switchBtn.textContent = isLight ? '☾' : '☀';
+   switchBtn.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+   localStorage.setItem('theme', isLight ? 'light' : 'dark');
+ });
