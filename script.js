@@ -44,7 +44,24 @@ document.querySelectorAll('*').forEach(el => {
 
  switchBtn.addEventListener('click', ()=>{
    const isLight = document.body.classList.toggle('light');
+   heroImg.src = isLight ? 'images/portrait-light.jpg' : 'images/portrait-dark.jpg';
+
    switchBtn.textContent = isLight ? '☾' : '☀';
    switchBtn.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+ });
+
+ const heroImg = document.querySelector('#hero-portrait');
+
+ 
+
+ const savedLight = localStorage.getItem('theme') === 'light';
+ if(savedLight) document.body.classList.add('light');
+ applyTheme(savedLight);
+
+
+ switchBtn.addEventListener('click', ()=>{
+    const isLight = document.body.classList.toggle('light');
+    applyTheme(isLight);
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
  });

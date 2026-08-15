@@ -193,9 +193,7 @@ nav li {color: #999; font-size: 22px; }
     }
 }
 
-.img-light{display:none};
-body.light .img-dark{display: block;};
-body.light .img-light{display: none};
+
 
 
 /* Hero */
@@ -222,6 +220,7 @@ body.light .img-light{display: none};
     .hero-img img {aspect-ratio: 3/2;}
 
 }
+
 
 
 /* Buttons */
