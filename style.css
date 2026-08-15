@@ -193,7 +193,9 @@ nav li {color: #999; font-size: 22px; }
     }
 }
 
-
+.img-light{display:none};
+body.light .img-dark{display: block;};
+body.light .img-light{display: none};
 
 
 /* Hero */
@@ -205,6 +207,7 @@ nav li {color: #999; font-size: 22px; }
     height:100%;
     object-fit:cover;
 }
+
 
 
 @media(max-width:850px){
