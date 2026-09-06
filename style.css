@@ -50,7 +50,7 @@ img{max-width:100%; height: auto; display:block;}
 
 .overlay::before {content: ''; position:fixed; inset:0; z-index:100; background-color:rgba(11, 11, 12, 0.7); backdrop-filter: blur(2px);
 }
-
+.fs-36{font-size:36px; text-transform: none; color:var(--text);}
 .silver, h1, .logo, .about-stack .stacks-list, .nav-links li a, .works-title, .works-year, .contact-title p, .footer-title{
     background:linear-gradient(96deg, #6f727a 0%, #c7cad0 14%, #ffffff 26%, #eef0f3 33%, #9a9da5 46%, #d9dbe0 60%, #ffffff 70%, #a9acb4 84%, #7c7f87 100%);
     background-size:240% 100%;
@@ -252,8 +252,8 @@ nav li {color: #999; font-size: 22px; }
     .hero-img,.hero-text{
         max-width: 100%;
     }
-    #hero .hero-img{order:-1;}
-    .hero-img img {aspect-ratio: 3/2;}
+  
+    .hero-img img {max-width:400px; }
 
 }
 
