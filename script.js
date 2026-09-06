@@ -44,7 +44,7 @@ document.querySelectorAll('*').forEach(el => {
 
  switchBtn.addEventListener('click', ()=>{
    const isLight = document.body.classList.toggle('light');
-   heroImg.src = isLight ? 'images/portrait-light.jpg' : 'images/2018 pic.jpg';
+   heroImg.src = isLight ? '/images/rkgg2.jpg' : '/images/rkgg.jpg';
 
    switchBtn.textContent = isLight ? '☾' : '☀';
    switchBtn.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
